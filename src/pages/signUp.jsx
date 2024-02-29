@@ -30,9 +30,11 @@ export const SignUp = () => {
           <label className="input input-bordered flex items-center bg-[#F3F4F6]">
             <input type="text" className="grow" placeholder="Re-password" />
           </label>
-          <button className="w-[384px] h-[48px] bg-[#0166FF] br-[20px] rounded-[20px]">
-            <p className="text-[#fff]">Sign up</p>
-          </button>
+          <Link href="signUpSteps">
+            <button className="w-[384px] h-[48px] bg-[#0166FF] br-[20px] rounded-[20px]">
+              <p className="text-[#fff]">Sign up</p>
+            </button>
+          </Link>
         </div>
         <div className="flex gap-[12px]">
           <p className="text-[#0F172A] text-base font-normal">
