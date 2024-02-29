@@ -1,6 +1,6 @@
 import { Geld } from "@/components/icons";
 import Link from "next/link";
-export const Login = () => {
+export default function Login() {
   return (
     <div className="w-[100vw]  bg-[#0166FF]">
       <div className="bg-[#fff] w-[50%] h-[100vh] inline-flex  flex-col justify-center items-center gap-[40px] ">
@@ -40,5 +40,4 @@ export const Login = () => {
       </div>
     </div>
   );
-};
-export default Login;
+}

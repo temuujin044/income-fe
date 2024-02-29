@@ -1,4 +1,4 @@
-import { Loading } from "@/components";
+import { Currency, Loading } from "@/components";
 
 Loading;
 
@@ -6,7 +6,7 @@ export const SignUpSteps = () => {
   return (
     <div>
       <div>
-        <Loading />
+        <Currency />
       </div>
     </div>
   );
