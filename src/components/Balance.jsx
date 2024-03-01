@@ -1,6 +1,6 @@
-import { Geld, GeldText, Money } from "./icons";
+import { Geld, GeldText, Coin } from "./icons";
 
-export const Currency = ({ setShowLoad }) => {
+export const Balance = ({ setShowLoad }) => {
   return (
     <div className="w-[100vw] h-[100vh] flex flex-col items-center gap-[141px] pt-[40px]">
       <div className="flex flex-col items-center gap-[48px]">
@@ -18,25 +18,20 @@ export const Currency = ({ setShowLoad }) => {
       </div>
       <div className="flex flex-col items-center ">
         <div className="bg-[blue] p-[8px] rounded-[50%] mb-[16px]">
-          <Money width={32} height={32} />
+          <Coin width={32} height={32} />
         </div>
-        <p className="text-2xl font-medium mb-[24px]">Select base currency</p>
-        <select className="select select-bordered w-96 h-16 p-4 bg-[#F3F4F6] mb-[12px]">
-          <option disabled selected>
-            MNT -Mongolian Tugrik
-          </option>
-          <option>USD - American Dollar</option>
-          <option>EUR - Euro</option>
-          <option>CHY - Chinese Yuan</option>
-        </select>
-        <p className="w-96 text-[#475569] text-xs font-normal leading-none mb-[32px]">
-          Your base currency should be the one you use most often. All
-          transaction in other currencies will be calculated based on this one
+        <p className="text-2xl font-medium mb-[24px]">
+          Set up your cash Balance
         </p>
-
+        <label className="input input-bordered flex items-center w-[384px] h-[48px] mb-[12px] bg-[#F3F4F6]">
+          <input type="text" className="grow" placeholder="Email" />
+        </label>
+        <p className="w-96 text-[#475569] text-xs font-normal leading-none mb-[32px]">
+          How much cash do you have in your wallet?
+        </p>
         <button
           onClick={() => {
-            setShowLoad("Balance");
+            setShowLoad("Finish");
           }}
           className="w-[384px] h-[48px] bg-[#0166FF] rounded-[20px]"
         >

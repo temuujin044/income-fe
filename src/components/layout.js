@@ -5,8 +5,9 @@ export const Layout = ({ children }) => {
     <>
       <div className=" container max-w-[1440px] mx-auto flex  flex-col">
         <Header />
-        <main className=" container max-w-[1440px] mx-auto">{children}</main>
+        <main>{children}</main>
       </div>
     </>
   );
 };
+export default Layout;

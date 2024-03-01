@@ -1,12 +1,20 @@
-import { Currency, Loading } from "@/components";
+import { Balance, Currency, Finish, Loading } from "@/components";
 
-Loading;
+import { useState } from "react";
 
 export const SignUpSteps = () => {
+  const [showLoad, setShowLoad] = useState("SignUpSteps");
+
   return (
     <div>
-      <div>
-        <Currency />
+      <div className={`${showLoad == "SignUpSteps" ? "block" : "hidden"}`}>
+        <Currency showLoad={showLoad} setShowLoad={setShowLoad} />
+      </div>
+      <div className={`${showLoad == "Balance" ? "block" : "hidden"}`}>
+        <Balance showLoad={showLoad} setShowLoad={setShowLoad} />
+      </div>
+      <div className={`${showLoad == "Finish" ? "block" : "hidden"}`}>
+        <Finish />
       </div>
     </div>
   );
