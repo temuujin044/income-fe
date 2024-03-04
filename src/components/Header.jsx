@@ -7,11 +7,13 @@ import Link from "next/link";
 export const Header = () => {
   const router = useRouter();
   return (
-    <div className=" max-w-[1440px] m-auto flex justify-between items-center  bg-[#fff] px-[120px] py-4 ">
+    <div className="w-[1440px] m-auto flex justify-between items-center  bg-[#fff] px-[120px] py-4 ">
       <div>
         <div class="navbar ">
           <div class="flex-none">
-            <Geld />
+            <div className="text-">
+              <Geld width={28} height={28} />
+            </div>
             <Link href="/dashBoard">
               <p class="btn btn-ghost text-base ">Dashboard</p>
             </Link>
@@ -29,7 +31,7 @@ export const Header = () => {
           className="h-[32px] flex w-[115px] rounded-3xl  justify-center gap-1 items-center bg-[#0166FF] border-none text-[white]"
           onClick={() => document.getElementById("my_modal_2").showModal()}
         >
-          <Leading />
+          <Leading width={20} height={20} />
           Record
         </button>
         {/* <dialog id="my_modal_2" className="modal">
@@ -41,7 +43,7 @@ export const Header = () => {
           </form>
         </dialog> */}
         <div className="avatar">
-          <div className="w-12">
+          <div className="w-[40px] h-[40px] rounded-[50%]">
             <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
           </div>
         </div>
