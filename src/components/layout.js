@@ -1,4 +1,4 @@
-import { Header } from ".";
+import { Header } from "./Header";
 
 export const Layout = ({ children }) => {
   return (
@@ -10,4 +10,3 @@ export const Layout = ({ children }) => {
     </>
   );
 };
-export default Layout;

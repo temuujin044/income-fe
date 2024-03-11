@@ -1,7 +1,6 @@
-// import Circle from "./icons/Circle";
-import { Geld, GeldText, Wireless } from "../icons";
+import { Geld, GeldText, Wireless, Shape } from "../icons";
 
-export default function Noise() {
+export const Noise = () => {
   return (
     <div className="mt-10 w-[384px] h-[208px] bg-[#0166FF] relative rounded-[20px] s">
       <div className="flex gap-2 items-center absolute top-[30px] left-[30px]">
@@ -16,11 +15,11 @@ export default function Noise() {
         <p className="text-[24px] text-[#FFF]">10,000,00</p>
       </div>
       <div className=" left-[160px] absolute top-[12px]">
-        {/* <Circle /> */}
+        <Shape width={385} height={220} />
       </div>
       <div className=" left-[320px] top-[148px] absolute">
         <Wireless />
       </div>
     </div>
   );
-}
+};
