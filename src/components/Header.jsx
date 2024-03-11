@@ -8,7 +8,7 @@ export const Header = () => {
   const router = useRouter();
   return (
     <div className="flex w-[100vw]">
-      <div className=" m-auto flex bg-[#fff] px-[120px] py-4 gap-[770px] ">
+      <div className=" m-auto flex bg-[#fff] px-[120px]  gap-[770px] ">
         <div>
           <div class="navbar ">
             <div class="flex-none">
