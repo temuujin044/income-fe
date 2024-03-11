@@ -8,3 +8,4 @@ export * from "./Wireless";
 export * from "./Shape";
 export * from "./Doth";
 export * from "./Arrow";
+export * from "./Home";

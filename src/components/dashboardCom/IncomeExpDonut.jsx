@@ -1,7 +1,7 @@
-import { PieChart } from "./PieChart";
+import { PieChart } from "./chart.js";
 import { DonutData } from "@/pages/utils/DonutData";
 
-export const Donut = () => {
+export const IncomeExpDonut = () => {
   return (
     <div className="flex w-[580px] h-[284px] flex-col items-start rounded-xl bg-[#FFF]">
       <div className="flex w-[580px] h-[284px]  p-4 justify-between items-center border-b">
