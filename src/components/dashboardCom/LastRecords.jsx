@@ -8,7 +8,7 @@ export default function LastRecords() {
       {LastRecData.map((e, index) => {
         return (
           <div key={index} className="flex flex-col items-start  rounded-xl">
-            <div className="flex p-5 justify-between items-center border- w-[1180px]  bg-[#FFF] ">
+            <div className="flex p-4 justify-between items-center border- w-[1180px] border-b-[1px] bg-[#FFF] ">
               <div className="flex items-center gap-4">
                 <div className="w-[40px] h-[40px] rounded-full  bg-[#0166FF] flex justify-center items-center">
                   {e.icon}
