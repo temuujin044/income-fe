@@ -20,8 +20,8 @@ export const Header = () => {
               </Link>
             </div>
             <div class="flex-1">
-              <Link href="/record">
-                <p class="btn btn-ghost text-base">Record</p>
+              <Link href="/records">
+                <p class="btn btn-ghost text-base">Records</p>
               </Link>
             </div>
           </div>

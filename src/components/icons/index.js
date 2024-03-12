@@ -9,3 +9,7 @@ export * from "./Shape";
 export * from "./Doth";
 export * from "./Arrow";
 export * from "./Home";
+export * from "./Eye";
+export * from "./LeadingBlue";
+export * from "./HomeBlue";
+export * from "./ForkKnife";

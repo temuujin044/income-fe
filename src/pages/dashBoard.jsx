@@ -10,7 +10,7 @@ import LastRecords from "@/components/dashboardCom/LastRecords";
 
 export const DashBoard = () => {
   return (
-    <div className=" flex flex-col justify-center items-center gap-[20px] bg-[#F3F4F6] w-[100vw]">
+    <div className=" flex flex-col justify-center items-center gap-[20px] bg-[#F3F4F6] h-[100vh] w-[100vw]">
       <div className="flex gap-[20px]">
         <Noise />
         <YourIncome />
@@ -20,7 +20,7 @@ export const DashBoard = () => {
         <IncomeExpense />
         <IncomeExpDonut />
       </div>
-      <div>
+      <div className="">
         <LastRecords />
       </div>
     </div>

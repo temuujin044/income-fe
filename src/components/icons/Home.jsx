@@ -1,9 +1,9 @@
-export const Home = () => {
+export const Home = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
+      width={width}
+      height={height}
       viewBox="0 0 20 20"
       fill="none"
     >

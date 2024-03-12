@@ -1,14 +1,14 @@
 import { LastRecData } from "@/pages/utils/LastRecData";
 export default function LastRecords() {
   return (
-    <div className="flex flex-col items-start rounded-xl  bg-[#FFF] ">
+    <div className="flex flex-col items-start rounded-xl  bg-[#FFF] pb-[10px]">
       <div className="flex items-center  gap-2 p-4 border-b w-[1180px]">
         <p className="text-[16px] text-[#0f172a]">Last Records</p>
       </div>
       {LastRecData.map((e, index) => {
         return (
           <div key={index} className="flex flex-col items-start  rounded-xl">
-            <div className="flex p-4 justify-between items-center border- w-[1180px] border-b-[1px] bg-[#FFF] ">
+            <div className="flex p-4 justify-between items-center border- w-[1180px]  bg-[#FFF] ">
               <div className="flex items-center gap-4">
                 <div className="w-[40px] h-[40px] rounded-full  bg-[#0166FF] flex justify-center items-center">
                   {e.icon}
