@@ -3,7 +3,7 @@ import Modal from "./Modal";
 import React, { useState } from "react";
 
 export function Option() {
-  const [valueD, setValueD] = useState("Choose");
+  const [valueD, setValueD] = useState("Find or choose category");
   const [display, setDisplay] = useState("display");
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const handleGetValueD = (valueD) => {
@@ -26,13 +26,22 @@ export function Option() {
     //   })}
     // </select>
     <div className="dropdown w-full   text-[#94A3B8] text-base font-normal not-italic bg-[#F9FAFB] overflow-auto-y">
-      <div
+      <div>
+        <select className="select select-bordered w-[350px] ">
+          <option disabled selected>
+            Find or choose category
+          </option>
+          <option>Han Solo</option>
+          <option>Greedo</option>
+        </select>
+      </div>
+      {/* <div
         tabIndex={0}
         role="button"
         className="btn selected max-w-full w-full bg-[#F9FAFB] border-none text-center flex justify-start text-[#94A3B8] "
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
-        <option className="text-[#000000]">{valueD}</option>
+        <option className="text-[#94A3B8]">{valueD}</option>
       </div>
       <ul
         tabIndex={0}
@@ -41,19 +50,19 @@ export function Option() {
         }`}
       >
         <li
-          className="h-[450px] overflow-y-scroll flex "
+          className="h-[450px] overflow-x-scroll flex "
           style={{ maxHeight: "180px" }}
         >
           {category.map((e) => {
             return (
               <a
-                className="flex flex-col justify-center items-start text-[#000000]"
+                className="flex  text-[#000000]"
                 onClick={() => {
                   handleGetValueD(`${e.cateName}`);
                 }}
               >
-                <div className="flex text-center gap-2 py-2 px-2 ">
-                  <p>{e.logo}</p>
+                <div className="flex items-center gap-2 py-2 px-2 ">
+                  <p className="">{e.logo}</p>
                   <p className="text-[#000000] py-0.5 text-base not-italic font-normal">
                     {e.cateName}
                   </p>
@@ -62,7 +71,7 @@ export function Option() {
             );
           })}
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 }

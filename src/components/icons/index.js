@@ -13,3 +13,6 @@ export * from "./Eye";
 export * from "./LeadingBlue";
 export * from "./HomeBlue";
 export * from "./ForkKnife";
+export * from "./GeldWhite";
+export * from "./GeldWhiteText";
+export * from "./AddCate";

@@ -1,4 +1,4 @@
-export const Wireless = (width, height) => {
+export const Wireless = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

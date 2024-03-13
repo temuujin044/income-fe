@@ -1,11 +1,11 @@
-import { Geld, GeldText, Wireless, Shape } from "../icons";
+import { GeldWhite, GeldWhiteText, Wireless, Shape } from "../icons";
 
 export const Noise = () => {
   return (
     <div className="mt-10 w-[384px] h-[208px] bg-[#0166FF] relative rounded-[20px] s">
       <div className="flex gap-2 items-center absolute top-[30px] left-[30px]">
-        <Geld width={20} height={20} />
-        <GeldText width={42} height={15} />
+        <GeldWhite width={20} height={20} />
+        <GeldWhiteText width={42} height={15} />
       </div>
       <div
         className="inline-flex flex-col absolute left-[30px] top-[125px]
@@ -18,7 +18,7 @@ export const Noise = () => {
         <Shape width={385} height={220} />
       </div>
       <div className=" left-[320px] top-[148px] absolute">
-        <Wireless />
+        <Wireless width={40} height={40} />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ export const Header = () => {
   const router = useRouter();
   return (
     <div className="flex w-[100vw]">
-      <div className=" m-auto flex bg-[#fff] px-[120px]  gap-[770px] ">
+      <div className=" m-auto flex bg-[#fff] px-[120px]  gap-[950px] ">
         <div>
           <div class="navbar ">
             <div class="flex-none">
@@ -27,7 +27,7 @@ export const Header = () => {
           </div>
         </div>
 
-        <div class="avatar flex gap-5 justify-center items-center">
+        <div class="avatar flex gap-6 justify-center items-center">
           <button
             className="h-[32px] flex w-[115px] rounded-3xl  justify-center gap-1 items-center bg-[#0166FF] border-none text-[white]"
             onClick={() => document.getElementById("my_modal_2").showModal()}

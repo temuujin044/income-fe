@@ -1,5 +1,5 @@
 import { LeadingBlue } from "../icons";
-// import { AiFillAccountBook } from "react-icons/ai";
+
 export default function AddCategory() {
   return (
     <div>

@@ -3,7 +3,7 @@ export const LastRecData = [
   {
     header: "Last Records",
     color: "",
-    icon: <Home />,
+    icon: <Home width={20} height={20} />,
     has: "-",
     num: " 1,000₮",
     p: "3 hours ago",
@@ -12,7 +12,7 @@ export const LastRecData = [
   {
     header: "Last Records",
     color: "",
-    icon: <Home />,
+    icon: <Home width={20} height={20} />,
     has: "-",
     num: " 1,000₮",
     p: "3 hours ago",
@@ -21,7 +21,7 @@ export const LastRecData = [
   {
     header: "Last Records",
     color: "",
-    icon: <Home />,
+    icon: <Home width={20} height={20} />,
     has: "-",
     num: " 1,000₮",
     p: "3 hours ago",
@@ -30,7 +30,7 @@ export const LastRecData = [
   {
     header: "Last Records",
     color: "",
-    icon: <Home />,
+    icon: <Home width={20} height={20} />,
     has: "-",
     num: " 1,000₮",
     p: "3 hours ago",
@@ -39,7 +39,7 @@ export const LastRecData = [
   {
     header: "Last Records",
     color: "",
-    icon: <Home />,
+    icon: <Home width={20} height={20} />,
     has: "-",
     num: " 1,000₮",
     p: "3 hours ago",
@@ -48,7 +48,7 @@ export const LastRecData = [
   {
     header: "Last Records",
     color: "",
-    icon: <Home />,
+    icon: <Home width={20} height={20} />,
     has: "-",
     num: " 1,000₮",
     p: "3 hours ago",

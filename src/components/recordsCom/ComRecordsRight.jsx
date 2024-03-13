@@ -16,7 +16,7 @@ export default function ComRecordsRight() {
         </div>
         <button className="btn bg-[#F9FAFB]">Newest fisrt</button>
       </div>
-      <div className="flex  justify-between bg-[#FFFFFF] rounded-xl border-solid-1 border-[#E5E7EB] px-6 py-2 items-center w-[894px]">
+      <div className="flex  justify-between bg-[#FFFFFF] rounded-xl border-[1px] border-[#E5E7EB]      px-6 py-2 items-center w-[894px]">
         <label className=" cursor-pointer items-center flex space-x-2 ">
           <input type="checkbox" defaultChecked className="checkbox" />
           <span className="label-text">Select All</span>

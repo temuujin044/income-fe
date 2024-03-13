@@ -1,11 +1,11 @@
-import { HomeBlue, Home, ForkKnife } from "@/components/icons";
+import { HomeBlue, Home, ForkKnife, AddCate } from "@/components/icons";
 
 export const recordData = [
   {
     input: <input type="checkbox" defaultChecked className="checkbox" />,
     homeLogo: (
       <div className="w-[40px] h-[40px] rounded-full  bg-[#0166FF] flex justify-center items-center">
-        <Home />
+        <Home width={20} height={20} />
       </div>
     ),
     categories: "Food & Drinks",
@@ -130,7 +130,7 @@ export const recordDataBotom = [
 export const category = [
   {
     cateName: " Add Category",
-    logo: <img src="/plus.svg" alt="" />,
+    logo: <AddCate width={20} height={20} />,
   },
   {
     cateName: " Home",
