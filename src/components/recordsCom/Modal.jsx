@@ -1,11 +1,33 @@
 import { Input } from "./Input";
-import { Option, Option2, Option3, Option4 } from "./Option";
+import { Option2, Option3, Option4 } from "./Option";
 import React, { useState } from "react";
+import { category, recordData } from "@/pages/utils/recordData";
+
+// export function Option() {
+//   const [valueD, setValueD] = useState("Find or choose category");
+//   const [valueIcon, setValueIcon] = useState("Find or choose category");
+//   const [display, setDisplay] = useState("display");
+//   const [dropdownVisible, setDropdownVisible] = useState(false);
+//   const handleGetValueD = (valueD) => {
+//     setValueD(valueD);
+//     setDropdownVisible(false);
+//     console.log(dropdownVisible);
+//   };
+// }
 
 export default function Modal() {
+  const [valueD, setValueD] = useState("Find or choose category");
+  const [valueIcon, setValueIcon] = useState("Find or choose category");
+  const [display, setDisplay] = useState("display");
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const handleGetValueD = (valueD) => {
+    setValueD(valueD);
+    setDropdownVisible(false);
+    console.log(dropdownVisible);
+  };
   const [color, setColor] = useState("blue");
   return (
-    <dialog id="my_modal_3" className="modal  backdrop-blur-sm ">
+    <dialog id="my_modal_3" className="modal  backdrop-blur-sm  relative z-1">
       <div className="modal-box max-w-[792px] p-1 bg-[#FFFFFF] max-h-[580px] overflow-hidden ">
         <form method="dialog">
           <button className="btn pt-2 btn-ghost text-[#0F172A] w-6 h-6 absolute right-2 top-2">
@@ -51,7 +73,45 @@ export default function Modal() {
                 <p className="text-base not-italic font-normal p-1 ">
                   Category
                 </p>
-                <Option />
+                <div className="w-full  absolute-y text-[#94A3B8] text-base font-normal not-italic bg-[#F9FAFB] overflow-auto-y   ">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className="btn selected max-w-full w-full bg-[#F9FAFB] border-none text-center flex justify-start text-[#94A3B8] "
+                    onClick={() => setDropdownVisible(!dropdownVisible)}
+                  >
+                    <option className="text-[#94A3B8]">{valueD}</option>
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className={`dropdown-content  z-[1] menu p-0 rounded-box bg-[#FFFFFF] max-w-full w-full shadow-2xl  ${
+                      dropdownVisible ? "block" : "hidden"
+                    }`}
+                  >
+                    <li
+                      className=" z-1 overflow-x-scroll flex "
+                      style={{ minHeight: "180px" }}
+                    >
+                      {category.map((e) => {
+                        return (
+                          <a
+                            className="flex  text-[#000000]"
+                            onClick={() => {
+                              handleGetValueD(`${e.cateName}`);
+                            }}
+                          >
+                            <div className="flex items-center gap-2 py-2 px-2 ">
+                              <p className="">{e.logo}</p>
+                              <p className="text-[#000000] py-0.5 text-base not-italic font-normal">
+                                {e.cateName}
+                              </p>
+                            </div>
+                          </a>
+                        );
+                      })}
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className="flex justify-between">
                 <div className="w-[168px]">
