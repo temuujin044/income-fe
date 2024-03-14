@@ -1,6 +1,8 @@
 import { category, recordData } from "@/pages/utils/recordData";
 import Modal from "./Modal";
 import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export function Option() {
   const [valueD, setValueD] = useState("Find or choose category");
@@ -11,11 +13,11 @@ export function Option() {
     setDropdownVisible(false);
     console.log(dropdownVisible);
   };
-  // function handleGetValueD (valueD) {
+  // function handleGetValueD(valueD) {
   //   setValueD(valueD);
   //   setDropdownVisible(false);
   //   console.log(dropdownVisible);
-  // };
+  // }
   return (
     // <select className="select select-bordered w-full  text-[#94A3B8] text-base font-normal not-italic bg-[#F9FAFB]">
     //   <option disabled selected className="">
@@ -26,7 +28,7 @@ export function Option() {
     //   })}
     // </select>
     <div className="dropdown w-full   text-[#94A3B8] text-base font-normal not-italic bg-[#F9FAFB] overflow-auto-y">
-      <div>
+      {/* <div>
         <select className="select select-bordered w-[350px] ">
           <option disabled selected>
             Find or choose category
@@ -34,8 +36,8 @@ export function Option() {
           <option>Han Solo</option>
           <option>Greedo</option>
         </select>
-      </div>
-      {/* <div
+      </div> */}
+      <div
         tabIndex={0}
         role="button"
         className="btn selected max-w-full w-full bg-[#F9FAFB] border-none text-center flex justify-start text-[#94A3B8] "
@@ -71,42 +73,57 @@ export function Option() {
             );
           })}
         </li>
-      </ul> */}
+      </ul>
     </div>
   );
 }
 
 export function Option2() {
+  const [selectedDate, setSelectedDate] = useState(new Date());
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+    // Handle calendar changes here
+  };
+
   return (
-    <select className="select select-bordered  max-w-xs w-[168px] text-[#0F172A] text-base font-normal not-italic bg-[#F9FAFB]">
-      <option disabled selected>
-        Oct 30, 2023
-      </option>
-      <option>Oct 29, 2023</option>
-      <option>Oct 28, 2023</option>
-    </select>
+    <DatePicker
+      selected={selectedDate}
+      onChange={handleDateChange}
+      dateFormat="MMMM d, yyyy"
+      className="select select-bordered max-w-xs w-[168px] text-[#0F172A] text-base font-normal not-italic bg-[#F9FAFB]"
+    />
   );
 }
+
 export function Option3() {
+  const [selectedTime, setSelectedTime] = useState(new Date());
+
+  const handleTimeChange = (time) => {
+    setSelectedTime(time);
+    // Handle time changes here
+  };
+
   return (
-    <select className="select select-bordered max-w-xs w-[168px] text-[#0F172A]] text-base font-normal not-italic bg-[#F9FAFB]">
-      <option disabled selected>
-        4:15 PM
-      </option>
-      <option>3:32 PM</option>
-      <option>9:23 AM</option>
-    </select>
+    <DatePicker
+      selected={selectedTime}
+      onChange={handleTimeChange}
+      showTimeSelect
+      showTimeSelectOnly
+      timeFormat="HH:mm"
+      timeCaption="Time"
+      dateFormat="h:mm aa"
+      className="select select-bordered max-w-xs w-[168px] text-[#0F172A] text-base font-normal not-italic bg-[#F9FAFB]"
+    />
   );
 }
 
 export function Option4() {
   return (
-    <select className="select select-bordered max-w-xs w-full text-[#94A3B8] text-base font-normal not-italic bg-[#F9FAFB]">
-      <option disabled selected>
-        Write here
-      </option>
-      <option>Han Solo</option>
-      <option>Greedo</option>
-    </select>
+    <input
+      type="text"
+      placeholder="Write here"
+      className="bg-[#F3F4F6] w-[320px] h-[48px] rounded-[8px] pl-[16px] text-neutral-700 text-base font-normal"
+    ></input>
   );
 }

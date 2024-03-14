@@ -59,7 +59,7 @@ export default function Modal() {
                   <Option2 />
                 </div>
                 <div className="w-[168px]">
-                  <p className="text-base not-italic font-normal p-1">Date</p>
+                  <p className="text-base not-italic font-normal p-1">Time</p>
                   <Option3 />
                 </div>
               </div>
@@ -78,15 +78,15 @@ export default function Modal() {
             </div>
           </div>
           <div className="pt- pb-6 px-6 w-[396px] flex flex-col gap-8">
-            <div>
-              <p className="text-base not-italic font-normal p-1">Payee</p>
+            <div className="overflow-y-scroll">
+              <p className="text-base not-italic font-normal p-1 ">Payee</p>
               <Option4 />
             </div>
             <div>
               <p>Note</p>
               <textarea
                 placeholder="Write here"
-                className="textarea textarea-bordered textarea-lg w-full min-h-[280px] max-w-xs"
+                className="overflow-y-scroll textarea textarea-bordered textarea-lg w-full min-h-[280px] max-w-xs"
               ></textarea>
             </div>
           </div>
