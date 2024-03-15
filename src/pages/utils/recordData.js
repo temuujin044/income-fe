@@ -162,11 +162,28 @@ export const category = [
 ];
 
 export const reactIcons = [
-  {
-    logo: <FaHouse />,
-    logo: <CiAirportSign1 />,
-    log: <CiAlarmOn />,
-  },
+  { logo: <FaHouse size={24} /> },
+  { logo: <CiAirportSign1 size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
+  { logo: <CiAlarmOn size={24} /> },
 ];
 export const colorChange = [
   { color: <div className="rounded-full w-6 h-6 bg-[#0166FF]"></div> },

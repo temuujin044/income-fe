@@ -3,8 +3,11 @@ import { Type, Category } from "@/pages/utils/recordsComData";
 import AddCategory from "./AddCategory";
 import Modal from "./Modal";
 import { RangeSlider } from "./MUI";
+import { useState } from "react";
 
 export default function ComRecords() {
+  const [visible, setVisible] = useState(false);
+
   return (
     <div className=" w-[282px]  bg-[#FFFFFF] px-2 py-6 flex flex-col gap-8 items-start  rounded-xl">
       <div>
@@ -15,11 +18,13 @@ export default function ComRecords() {
 
           <button
             className="flex h-[32px] items-center  justify-center gap-[5px] bg-[#0166FF] rounded-3xl text-[#FFFFFF] "
-            onClick={() => document.getElementById("my_modal_3").showModal()}
+            onClick={() => {
+              setVisible(!visible);
+            }}
           >
-            <Leading width={20} height={20} /> Add
+            <Leading width={20} height={20} />
+            Add
           </button>
-          <Modal />
         </div>
       </div>
       <div className="bg-[#F3F4F6] w-[250px] h-8 p-4 rounded-lg border border-gray-300 justify-start items-center inline-flex">
@@ -84,6 +89,7 @@ export default function ComRecords() {
 
         <RangeSlider />
       </div>
+      {visible && <Modal handleClose={setVisible} />}
     </div>
   );
 }
